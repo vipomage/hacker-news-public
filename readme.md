@@ -1,3 +1,5 @@
+Deployed at [ Firebase ](https://hacker-news-4d87f.web.app/)
+
 # Prerequisites
 1. Node.js >= v14.16.0
 2. npm >= 6.14.11
