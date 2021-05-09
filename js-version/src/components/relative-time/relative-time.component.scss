@@ -1,0 +1,22 @@
+.relative-time-component-wrapper {
+  position: relative;
+  color: royalblue;
+
+  &:hover .hover-element {
+    display: block;
+  }
+
+  .hover-element {
+    font-weight: 300;
+    display: none;
+    position: absolute;
+    width: max-content;
+    left: 110%;
+    bottom: 0;
+    text-align: center;
+    padding: var(--spacer);
+    background-color: #666666;
+    border-radius: var(--border-radius);
+    color: white;
+  }
+}

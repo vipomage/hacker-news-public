@@ -1,0 +1,14 @@
+.label-icon-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  i.icon {
+    margin-right: var(--spacer);
+  }
+
+  p.label {
+    margin: 0;
+  }
+}

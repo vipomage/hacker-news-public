@@ -1,0 +1,110 @@
+.story-wrapper {
+  opacity: 0.9;
+  display: flex;
+  flex-direction: column;
+  background: white;
+  border-radius: var(--border-radius);
+  margin-bottom: var(--spacerx2);
+  box-shadow: 1px 1px 2px grey;
+
+  &.hidden {
+    display: none;
+  }
+
+  &:hover h3.header {
+    color: black;
+  }
+
+  h3.header {
+    font-weight: 400;
+    color: #5e5e5e;
+    display: flex;
+    margin: 0;
+    justify-content: space-between;
+    cursor: pointer;
+    padding: var(--spacerx2);
+
+    .header-loading-spinner {
+      margin-left: var(--spacerx2);
+
+      &.hidden {
+        display: none;
+      }
+    }
+
+    .comment-details {
+      margin-left: var(--spacerx3);
+      display: flex;
+      align-items: center;
+      flex: 0 0;
+      justify-content: space-between;
+      // Calc is workaround for sass err
+      flex-basis: calc(min(25%, 75px));
+
+      .comment-count {
+        font-weight: 300;
+      }
+    }
+
+    .header-icon-wrapper {
+      margin-left: var(--spacerx2);
+      display: flex;
+      color: royalblue;
+    }
+  }
+
+  .body {
+    &.hidden {
+      display: none;
+    }
+
+    .story-meta {
+      display: flex;
+      flex-direction: row;
+      padding: var(--spacerx2) var(--spacerx3);
+      margin: 0 var(--spacerx2);
+      justify-content: space-between;
+      flex-wrap: wrap;
+
+      @media screen and (max-width: 530px) {
+        flex-direction: column;
+        grid-gap: var(--spacerx2);
+
+        .user,
+        .score,
+        .timestamp {
+          justify-content: flex-start;
+        }
+      }
+
+      a {
+        color: royalblue;
+      }
+    }
+
+    .comments {
+      border-radius: var(--border-radius);
+
+      .comments-header {
+        font-weight: 500;
+        margin: 0;
+        padding: var(--spacerx2);
+        padding-right: 0;
+        border-top: var(--border);
+
+        strong {
+          font-weight: 700;
+        }
+      }
+
+      & > .comment-wrapper {
+        padding-bottom: var(--spacer);
+        margin: var(--spacerx2);
+      }
+    }
+
+    p {
+      margin: 0;
+    }
+  }
+}

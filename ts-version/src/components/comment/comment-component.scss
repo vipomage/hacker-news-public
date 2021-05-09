@@ -1,0 +1,37 @@
+.comment-wrapper {
+  padding-left: var(--spacerx4);
+  padding-right: var(--spacer);
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: var(--spacer);
+    padding: var(--spacer);
+
+    .user-info-wrapper {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: baseline;
+      font-weight: 500;
+
+      .user-id {
+        margin-right: var(--spacerx2);
+        font-size: 1.3rem;
+      }
+    }
+  }
+
+  .comment {
+    font-weight: 300;
+    margin-left: var(--spacerx2);
+    margin-bottom: var(--spacer);
+    padding-bottom: var(--spacerx3);
+    border-bottom: 1px dashed darkblue;
+
+    p {
+      overflow-wrap: anywhere;
+    }
+  }
+}

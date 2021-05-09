@@ -1,0 +1,20 @@
+.app-component {
+  width: 80vw;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+
+  @media screen and (max-width: 768px) {
+    width: 90vw;
+  }
+
+  @media screen and (max-width: 530px) {
+    width: unset;
+  }
+
+  .site-header {
+    text-align: center;
+    color: white;
+  }
+}
